@@ -15,11 +15,12 @@
          
       <a href="${pageContext.request.contextPath}/personList">Person List</a>  
       
-      <h1>JNLP Race</h1>
-		<a href="${pageContext.request.contextPath}/JNLPExample.jnlp" >JNLP File</a>
+      <h1>Start Main</h1>
+		<a href="${pageContext.request.contextPath}/mainStart" >Start Main</a>
        
              <h1>Index JNLP</h1>
 		<a href="${pageContext.request.contextPath}/jnlpIndex" >Index JNLP</a>
+		
        
    </body>
 </html>

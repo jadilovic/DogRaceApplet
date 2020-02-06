@@ -2,7 +2,8 @@ package org.o7planning.sbjsp.controller;
  
 import java.util.ArrayList;
 import java.util.List;
- 
+
+import org.o7planning.sbjsp.StaApplet;
 import org.o7planning.sbjsp.model.Person;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,5 +44,24 @@ public class MainController {
         model.addAttribute("persons", persons);
  
         return "jnlpIndex";
+    }
+    
+    @RequestMapping(value = { "/mainStart" }, method = RequestMethod.GET)
+    public String viewStart(Model model) {
+
+        int val[] = StaApplet.getValues();
+        model.addAttribute("values", val);
+        
+        return "mainStart";
+    }
+    
+    @RequestMapping(value = { "/runJar" }, method = RequestMethod.GET)
+    public String runJar(Model model) {
+        return "runJar";
+    }
+    
+    @RequestMapping(value = { "/moving" }, method = RequestMethod.GET)
+    public String raceResult(Model model) {
+        return "moving";
     }
 }

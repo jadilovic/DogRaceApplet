@@ -22,9 +22,9 @@
     </security>
     <resources>
         <j2se version="1.6+" />
-        <jar href="WebRace.jar" />
+        <jar href="DogAppletJ.jar" />
     </resources>
-    <application-desc main-class="StartingMain">
+    <application-desc main-class="org.o7planning.sbjsp.StaApplet">
                 <argument><%=request.getParameter("test_param")%></argument>
         </application-desc>
 </jnlp>
